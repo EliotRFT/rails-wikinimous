@@ -1,0 +1,8 @@
+<div class="self-container">
+ <%= simple_form_for @article do |f| %>
+  <%= f.input :title, :label => 'Title' %>
+  <%= f.input :content, :label => 'Content' %>
+  <%= f.button :submit, class: "btn btn-primary", :label => 'Create Article' %>
+<% end %>
+<%= link_to "Back", articles_path %>
+</div>
